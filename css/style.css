@@ -1,0 +1,49 @@
+/* =====================================
+   Reset
+===================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:#1b1b1b;
+
+    color:#ffffff;
+
+    font-family:"Inter",sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/* =====================================
+   Homepage
+===================================== */
+
+.homepage{
+
+    width:100%;
+
+    margin-top:82px;
+
+}
+
+.homepage-board{
+
+    width:100%;
+
+    display:block;
+
+}
