@@ -3,28 +3,26 @@
 ===================================== */
 
 *{
-
     margin:0;
     padding:0;
     box-sizing:border-box;
-
 }
 
 html{
-
     scroll-behavior:smooth;
-
 }
 
 body{
 
     background:#1b1b1b;
-
     color:#ffffff;
 
     font-family:"Inter",sans-serif;
 
     overflow-x:hidden;
+
+    /* Height of the fixed navigation */
+    padding-top:56px;
 
 }
 
@@ -36,14 +34,15 @@ body{
 
     width:100%;
 
-    margin-top:82px;
+    margin:0;
 
 }
 
 .homepage-board{
 
-    width:100%;
-
     display:block;
+
+    width:100%;
+    height:auto;
 
 }
