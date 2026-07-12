@@ -11,7 +11,7 @@
 
     width:100%;
 
-    background:#171717;
+    background:#111111;
 
     border-bottom:1px solid rgba(255,255,255,.08);
 
@@ -21,12 +21,16 @@
 
 .container{
 
-    width:100%;
+    max-width:1800px;
 
-    padding:14px 48px;
+    margin:0 auto;
+
+    padding:16px 36px;
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
 }
@@ -34,12 +38,14 @@
 .logo{
 
     display:flex;
+
     align-items:center;
+
     gap:10px;
 
-    white-space:nowrap;
-
     text-decoration:none;
+
+    white-space:nowrap;
 
     transition:.25s;
 
@@ -53,21 +59,19 @@
 
 .program{
 
-    color:#ececec;
+    color:#ECECEC;
 
-    font-size:1.15rem;
+    font-size:1.18rem;
 
     font-weight:500;
-
-    letter-spacing:.2px;
 
 }
 
 .digital{
 
-    color:#ffffff;
+    color:#FFFFFF;
 
-    font-size:1.15rem;
+    font-size:1.18rem;
 
     font-weight:700;
 
@@ -79,13 +83,13 @@ nav ul{
 
     list-style:none;
 
-    gap:48px;
+    gap:52px;
 
 }
 
 nav a{
 
-    color:#e6e6e6;
+    color:#ECECEC;
 
     text-decoration:none;
 
@@ -99,6 +103,6 @@ nav a{
 
 nav a:hover{
 
-    color:#ffffff;
+    color:#FFFFFF;
 
 }
