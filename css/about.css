@@ -1,0 +1,356 @@
+/* =====================================
+   ABOUT PAGE
+===================================== */
+
+.about-page{
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:#000000;
+
+    padding:110px 0 70px;
+
+}
+
+
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.about-container{
+
+    width:1600px;
+
+    max-width:92%;
+
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:680px 1fr;
+
+    column-gap:65px;
+
+    align-items:start;
+
+}
+
+
+
+/* =====================================
+   LEFT COLUMN
+===================================== */
+
+.about-images{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:35px;
+
+}
+
+
+
+/* =====================================
+   IMAGE SETTINGS
+===================================== */
+
+.about-image{
+
+    width:680px;
+
+    height:auto;
+
+    display:block;
+
+    object-fit:cover;
+
+}/* =====================================
+   RIGHT COLUMN
+===================================== */
+
+.about-text{
+
+    width:100%;
+
+    max-width:780px;
+
+    color:#E7E7E6;
+
+    align-self:start;
+
+    padding-top:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+/* =====================================
+   HEADING
+===================================== */
+
+.about-text h1{
+
+    margin:0 0 30px 0;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    color:#E7E7E6;
+
+}
+
+
+
+/* =====================================
+   PARAGRAPHS
+===================================== */
+
+.about-text p{
+
+    margin:0 0 34px 0;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:22px;
+
+    font-weight:400;
+
+    line-height:1.50;
+
+    color:#E7E7E6;
+
+    text-align:justify;
+
+    text-justify:inter-word;
+
+    overflow-wrap:break-word;
+
+    word-break:normal;
+
+}
+
+
+
+/* =====================================
+   LAST PARAGRAPH
+===================================== */
+
+.about-text p:last-child{
+
+    margin-bottom:0;
+
+}/* =====================================
+   COLUMN ALIGNMENT
+===================================== */
+
+.about-images{
+
+    align-self:start;
+
+    justify-self:start;
+
+    max-width:680px;
+
+}
+
+.about-text{
+
+    align-self:start;
+
+    justify-self:start;
+
+}
+
+
+
+/* =====================================
+   IMAGE SETTINGS
+===================================== */
+
+.about-image{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+.about-images img:first-child{
+
+    margin-top:0;
+
+}
+
+.about-images img:last-child{
+
+    margin-bottom:0;
+
+}
+
+
+
+/* =====================================
+   TYPOGRAPHY
+===================================== */
+
+.about-text h1,
+.about-text p{
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+
+
+/* =====================================
+   PAGE SAFETY
+===================================== */
+
+.about-page{
+
+    overflow-x:hidden;
+
+}
+
+.about-container{
+
+    box-sizing:border-box;
+
+}
+
+.about-container *{
+
+    box-sizing:border-box;
+
+}/* =====================================
+   LARGE SCREENS
+===================================== */
+
+@media (max-width:1700px){
+
+    .about-container{
+
+        width:92%;
+
+        grid-template-columns:42% 54%;
+
+        column-gap:4%;
+
+    }
+
+    .about-image{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+/* =====================================
+   TABLETS
+===================================== */
+
+@media (max-width:1200px){
+
+    .about-page{
+
+        padding:90px 0 50px;
+
+    }
+
+    .about-container{
+
+        width:92%;
+
+        grid-template-columns:1fr;
+
+        row-gap:45px;
+
+    }
+
+    .about-images{
+
+        max-width:100%;
+
+    }
+
+    .about-image{
+
+        width:100%;
+
+    }
+
+    .about-text{
+
+        max-width:100%;
+
+    }
+
+}
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width:768px){
+
+    .about-page{
+
+        padding:80px 0 40px;
+
+    }
+
+    .about-container{
+
+        width:90%;
+
+        row-gap:30px;
+
+    }
+
+    .about-images{
+
+        gap:20px;
+
+    }
+
+    .about-text h1{
+
+        font-size:22px;
+
+        margin-bottom:20px;
+
+    }
+
+    .about-text p{
+
+        font-size:18px;
+
+        line-height:1.60;
+
+        margin-bottom:22px;
+
+    }
+
+}

@@ -1,0 +1,418 @@
+/* =====================================
+   PROJECTS PAGE
+===================================== */
+
+.projects-page{
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:#000000;
+
+    padding:110px 0 70px;
+
+}
+
+
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.projects-container{
+
+    width:1700px;
+
+    max-width:92%;
+
+    margin:0 auto;
+
+}
+
+
+
+/* =====================================
+   PAGE TITLE
+===================================== */
+
+.projects-title{
+
+    margin:0 0 90px;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#E7E7E6;
+
+    text-align:center;
+
+}
+
+
+
+/* =====================================
+   PAGE TYPOGRAPHY
+===================================== */
+
+.projects-page h1,
+.projects-page h2,
+.projects-page p,
+.projects-page a{
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}/* =====================================
+   PROJECT CARD
+===================================== */
+
+.project-card{
+
+    display:grid;
+
+    grid-template-columns:420px 1fr;
+
+    column-gap:60px;
+
+    align-items:center;
+
+    margin-bottom:80px;
+
+    padding-bottom:50px;
+
+    border-bottom:1px solid rgba(231,231,230,.15);
+
+}
+
+
+
+/* =====================================
+   PROJECT IMAGE
+===================================== */
+
+.project-image{
+
+    width:100%;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    transition:transform .35s ease;
+
+}
+
+
+
+/* =====================================
+   PROJECT CONTENT
+===================================== */
+
+.project-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+
+/* =====================================
+   PROJECT TITLE
+===================================== */
+
+.project-content h2{
+
+    margin:0 0 22px;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#E7E7E6;
+
+}
+
+.project-content h2 a{
+
+    color:#E7E7E6;
+
+    text-decoration:none;
+
+    transition:color .30s ease;
+
+}
+
+
+
+/* =====================================
+   PROJECT DESCRIPTION
+===================================== */
+
+.project-content p{
+
+    margin:0 0 28px;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:22px;
+
+    font-weight:400;
+
+    line-height:1.60;
+
+    color:#E7E7E6;
+
+    text-align:justify;
+
+}/* =====================================
+   PROJECT LINKS
+===================================== */
+
+.project-links{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:28px;
+
+    align-items:center;
+
+}
+
+.project-links a{
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#BA0C2F;
+
+    text-decoration:none;
+
+    transition:
+        color .30s ease,
+        transform .30s ease;
+
+}
+
+.project-links a:hover{
+
+    color:#D61F45;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+/* =====================================
+   PROJECT HOVER EFFECTS
+===================================== */
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.03);
+
+}
+
+.project-card:hover h2 a{
+
+    color:#BA0C2F;
+
+}
+
+
+
+/* =====================================
+   IMAGE LINKS
+===================================== */
+
+.project-image a{
+
+    display:block;
+
+    overflow:hidden;
+
+}
+
+
+
+/* =====================================
+   PROJECT CARD TRANSITION
+===================================== */
+
+.project-card{
+
+    transition:border-color .30s ease;
+
+}
+
+.project-card:hover{
+
+    border-bottom:1px solid rgba(186,12,47,.60);
+
+}
+
+
+
+/* =====================================
+   LINK ACCESSIBILITY
+===================================== */
+
+.project-links a:focus{
+
+    outline:2px solid #BA0C2F;
+
+    outline-offset:4px;
+
+}/* =====================================
+   LARGE SCREENS
+===================================== */
+
+@media (max-width:1700px){
+
+    .projects-container{
+
+        width:92%;
+
+    }
+
+}
+
+
+
+/* =====================================
+   TABLETS
+===================================== */
+
+@media (max-width:1200px){
+
+    .projects-page{
+
+        padding:90px 0 50px;
+
+    }
+
+    .project-card{
+
+        grid-template-columns:1fr;
+
+        row-gap:35px;
+
+        margin-bottom:70px;
+
+        padding-bottom:45px;
+
+    }
+
+    .project-image{
+
+        max-width:650px;
+
+        margin:0 auto;
+
+    }
+
+    .project-content{
+
+        width:100%;
+
+    }
+
+}
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width:768px){
+
+    .projects-page{
+
+        padding:80px 0 40px;
+
+    }
+
+    .projects-container{
+
+        width:90%;
+
+    }
+
+    .projects-title{
+
+        font-size:34px;
+
+        margin-bottom:60px;
+
+    }
+
+    .project-card{
+
+        row-gap:25px;
+
+        margin-bottom:50px;
+
+        padding-bottom:35px;
+
+    }
+
+    .project-content h2{
+
+        font-size:28px;
+
+        margin-bottom:16px;
+
+    }
+
+    .project-content p{
+
+        font-size:18px;
+
+        line-height:1.60;
+
+        margin-bottom:20px;
+
+    }
+
+    .project-links{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:16px;
+
+    }
+
+    .project-links a{
+
+        font-size:18px;
+
+    }
+
+}

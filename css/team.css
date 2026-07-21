@@ -1,0 +1,417 @@
+/* =====================================
+   TEAM PAGE
+===================================== */
+
+.team-page{
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:#000000;
+
+    padding:110px 0 70px;
+
+}
+
+
+
+/* =====================================
+   MAIN CONTAINER
+===================================== */
+
+.team-container{
+
+    width:1700px;
+
+    max-width:92%;
+
+    margin:0 auto;
+
+}
+
+
+
+/* =====================================
+   PAGE TITLE
+===================================== */
+
+.team-title{
+
+    margin:0 0 80px;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#E7E7E6;
+
+    text-align:center;
+
+}
+
+
+
+/* =====================================
+   PAGE TYPOGRAPHY
+===================================== */
+
+.team-page h1,
+.team-page h2,
+.team-page p{
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}/* =====================================
+   TEAM GRID
+===================================== */
+
+.team-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4, 1fr);
+
+    column-gap:50px;
+
+    row-gap:50px;
+
+    align-items:start;
+
+    justify-items:center;
+
+}
+
+
+
+/* =====================================
+   TEAM CARDS
+===================================== */
+
+.team-card{
+
+    width:100%;
+
+    max-width:340px;
+
+    text-align:center;
+
+}
+
+
+
+/* =====================================
+   TEAM PHOTOS
+===================================== */
+
+.team-photo{
+
+    width:100%;
+
+    aspect-ratio:1 / 1;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+
+/* =====================================
+   TEAM NAMES
+===================================== */
+
+.team-card h2{
+
+    margin:30px 0 18px;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#E7E7E6;
+
+    line-height:1.3;
+
+}
+
+
+
+/* =====================================
+   TEAM TITLES
+===================================== */
+
+.team-card p{
+
+    margin:0;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:22px;
+
+    font-weight:400;
+
+    color:#E7E7E6;
+
+    line-height:1.6;
+
+}/* =====================================
+   ACKNOWLEDGMENTS
+===================================== */
+
+.acknowledgments{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:120px auto 90px;
+
+}
+
+.acknowledgments h2{
+
+    margin:0 0 35px;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#E7E7E6;
+
+}
+
+.acknowledgments p{
+
+    margin:0 0 30px;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:22px;
+
+    font-weight:400;
+
+    line-height:1.60;
+
+    color:#E7E7E6;
+
+    text-align:justify;
+
+}
+
+
+
+/* =====================================
+   PROJECT PARTNERS
+===================================== */
+
+.project-partners{
+
+    margin:90px 0 100px;
+
+    text-align:center;
+
+}
+
+.project-partners h2{
+
+    margin:0 0 45px;
+
+    font-family:"Roboto", sans-serif;
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#E7E7E6;
+
+}
+
+
+
+/* =====================================
+   PARTNER LOGOS
+===================================== */
+
+.partner-logos{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:100px;
+
+    flex-wrap:wrap;
+
+}
+
+.partner-logo{
+
+    height:90px;
+
+    width:auto;
+
+    object-fit:contain;
+
+    display:block;
+
+}/* =====================================
+   LARGE SCREENS
+===================================== */
+
+@media (max-width:1700px){
+
+    .team-container{
+
+        width:92%;
+
+    }
+
+}
+
+
+
+/* =====================================
+   TABLETS
+===================================== */
+
+@media (max-width:1200px){
+
+    .team-page{
+
+        padding:90px 0 50px;
+
+    }
+
+    .team-grid{
+
+        grid-template-columns:repeat(2, 1fr);
+
+        gap:60px 50px;
+
+    }
+
+    .team-card{
+
+        max-width:360px;
+
+        margin:0 auto;
+
+    }
+
+    .partner-logos{
+
+        gap:60px;
+
+    }
+
+}
+
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width:768px){
+
+    .team-page{
+
+        padding:80px 0 40px;
+
+    }
+
+    .team-container{
+
+        width:90%;
+
+    }
+
+    .team-title{
+
+        font-size:34px;
+
+        margin-bottom:55px;
+
+    }
+
+    .team-grid{
+
+        grid-template-columns:1fr;
+
+        gap:50px;
+
+    }
+
+    .team-card{
+
+        max-width:340px;
+
+    }
+
+    .team-card h2{
+
+        font-size:24px;
+
+        margin:22px 0 14px;
+
+    }
+
+    .team-card p{
+
+        font-size:18px;
+
+        line-height:1.55;
+
+    }
+
+    .acknowledgments{
+
+        margin:80px auto 70px;
+
+    }
+
+    .acknowledgments h2,
+
+    .project-partners h2{
+
+        font-size:18px;
+
+    }
+
+    .acknowledgments p{
+
+        font-size:18px;
+
+        line-height:1.6;
+
+    }
+
+    .partner-logos{
+
+        flex-direction:column;
+
+        gap:35px;
+
+    }
+
+    .partner-logo{
+
+        height:70px;
+
+    }
+
+}
