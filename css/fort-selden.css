@@ -1,0 +1,516 @@
+/* ==========================================================
+   FORT SELDEN
+========================================================== */
+
+body{
+
+    margin:0;
+
+    padding:0;
+
+    background:#1A1A1A;
+
+    color:#ECECEC;
+
+    font-family:"Roboto",sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+.fort-selden-page{
+
+    width:100%;
+
+    background:#1A1A1A;
+
+}
+
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero-image{
+
+    width:100%;
+
+    padding-top:40px;
+
+    margin-bottom:45px;
+
+}
+
+.hero-image img{
+
+    display:block;
+
+    width:92%;
+
+    max-width:1600px;
+
+    margin:0 auto;
+
+}
+
+
+/* ==========================================================
+   MAIN CONTENT
+========================================================== */
+
+.project-content{
+
+    width:100%;
+
+}
+
+.project-container{
+
+    width:100%;
+
+    max-width:1600px;
+
+    margin:0 auto;
+
+    padding:0 45px;
+
+    box-sizing:border-box;
+
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.project-category{
+
+    display:none;
+
+}
+
+.project-content h1{
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:64px;
+
+    font-weight:300;
+
+    color:#FFFFFF;
+
+    line-height:1.05;
+
+    margin:0 0 45px;
+
+}
+
+
+/* ==========================================================
+   TEXT
+========================================================== */
+
+.project-text{
+
+    width:100%;
+
+    margin-bottom:55px;
+
+}
+
+.project-text p{
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:18px;
+
+    font-weight:400;
+
+    line-height:1.75;
+
+    color:#ECECEC;
+
+    text-align:justify;
+
+    text-justify:inter-word;
+
+    margin:0 0 22px;
+
+}
+
+.project-text strong{
+
+    color:#FFFFFF;
+
+    font-weight:700;
+
+}
+
+.project-text a{
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+}
+
+.project-text a:hover{
+
+    text-decoration:underline;
+
+}/* ==========================================================
+   VIDEO + SKETCHFAB
+========================================================== */
+
+.project-media{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:45px;
+
+    width:100%;
+
+    margin:65px 0;
+
+}
+
+.video,
+.model{
+
+    flex:1;
+
+}
+
+.video iframe,
+.model iframe{
+
+    width:100%;
+
+    height:420px;
+
+    display:block;
+
+    border:none;
+
+    background:#111;
+
+}
+
+
+/* ==========================================================
+   FEATURE IMAGES
+========================================================== */
+
+.feature-images{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:45px;
+
+    width:100%;
+
+    margin:65px 0;
+
+}
+
+.feature-image{
+
+    width:100%;
+
+}
+
+.feature-image img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+
+/* ==========================================================
+   HORIZONTAL GALLERY
+========================================================== */
+
+.gallery{
+
+    display:flex;
+
+    gap:18px;
+
+    overflow-x:auto;
+
+    overflow-y:hidden;
+
+    scroll-behavior:smooth;
+
+    padding:10px 0 18px;
+
+    margin:70px 0;
+
+    scrollbar-width:thin;
+
+    scrollbar-color:#666 #222;
+
+}
+
+.gallery::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.gallery::-webkit-scrollbar-track{
+
+    background:#222;
+
+    border-radius:10px;
+
+}
+
+.gallery::-webkit-scrollbar-thumb{
+
+    background:#666;
+
+    border-radius:10px;
+
+}
+
+.gallery::-webkit-scrollbar-thumb:hover{
+
+    background:#999;
+
+}
+
+.gallery a{
+
+    flex:0 0 auto;
+
+    text-decoration:none;
+
+}
+
+.gallery img{
+
+    width:320px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    display:block;
+
+    cursor:pointer;
+
+    transition:transform .25s ease,
+               opacity .25s ease;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.03);
+
+    opacity:.9;
+
+}/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1400px){
+
+    .project-container{
+
+        padding:0 40px;
+
+    }
+
+}
+
+
+@media (max-width:1200px){
+
+    .hero-image img{
+
+        width:95%;
+
+    }
+
+    .project-content h1{
+
+        font-size:54px;
+
+    }
+
+    .video iframe,
+    .model iframe{
+
+        height:380px;
+
+    }
+
+    .gallery img{
+
+        width:280px;
+
+        height:190px;
+
+    }
+
+}
+
+
+@media (max-width:992px){
+
+    .project-container{
+
+        padding:0 30px;
+
+    }
+
+    .project-content h1{
+
+        font-size:46px;
+
+    }
+
+    .project-media{
+
+        flex-direction:column;
+
+        gap:40px;
+
+    }
+
+    .feature-images{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+
+    }
+
+    .video iframe,
+    .model iframe{
+
+        height:360px;
+
+    }
+
+    .gallery img{
+
+        width:250px;
+
+        height:170px;
+
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .hero-image{
+
+        padding-top:25px;
+
+        margin-bottom:35px;
+
+    }
+
+    .hero-image img{
+
+        width:100%;
+
+    }
+
+    .project-container{
+
+        padding:0 20px;
+
+    }
+
+    .project-content h1{
+
+        font-size:38px;
+
+        margin-bottom:30px;
+
+    }
+
+    .project-text{
+
+        margin-bottom:40px;
+
+    }
+
+    .project-text p{
+
+        font-size:16px;
+
+        line-height:1.7;
+
+    }
+
+    .video iframe,
+    .model iframe{
+
+        height:300px;
+
+    }
+
+    .gallery{
+
+        gap:14px;
+
+    }
+
+    .gallery img{
+
+        width:220px;
+
+        height:150px;
+
+    }
+
+}
+
+
+@media (max-width:480px){
+
+    .project-container{
+
+        padding:0 15px;
+
+    }
+
+    .project-content h1{
+
+        font-size:30px;
+
+    }
+
+    .video iframe,
+    .model iframe{
+
+        height:220px;
+
+    }
+
+    .gallery img{
+
+        width:180px;
+
+        height:120px;
+
+    }
+
+}
