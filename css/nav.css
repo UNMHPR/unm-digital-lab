@@ -390,4 +390,34 @@
 
     }
 
+}/* =====================================
+   MOBILE LOGO
+===================================== */
+
+@media (max-width:600px){
+
+    .program{
+
+        display:none;
+
+    }
+
+    .digital{
+
+        display:block;
+
+        font-size:1rem !important;
+
+        white-space:nowrap;
+
+    }
+
+    .logo{
+
+        max-width:none;
+
+        flex:1;
+
+    }
+
 }
