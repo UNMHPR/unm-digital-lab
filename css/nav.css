@@ -396,9 +396,45 @@
 
 @media (max-width:600px){
 
+    .navbar .container{
+
+        padding:12px 18px;
+
+    }
+
+    .logo{
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        justify-content:center;
+
+        gap:0;
+
+        flex:1;
+
+        min-width:0;
+
+        max-width:calc(100% - 55px);
+
+        white-space:normal;
+
+        line-height:1.05;
+
+    }
+
     .program{
 
-        display:none;
+        display:block;
+
+        font-size:.78rem !important;
+
+        font-weight:500;
+
+        white-space:normal;
 
     }
 
@@ -406,17 +442,33 @@
 
         display:block;
 
-        font-size:1rem !important;
+        font-size:.82rem !important;
+
+        font-weight:700;
 
         white-space:nowrap;
 
+        margin-top:3px;
+
     }
 
-    .logo{
+    .menu-toggle{
 
-        max-width:none;
+        display:block !important;
 
-        flex:1;
+        width:40px;
+
+        height:40px;
+
+        min-width:40px;
+
+        flex-shrink:0;
+
+        margin-left:12px;
+
+        font-size:25px;
+
+        line-height:40px;
 
     }
 
