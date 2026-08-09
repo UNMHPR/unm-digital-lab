@@ -472,4 +472,92 @@
 
     }
 
+}/* =====================================
+   FORCE MOBILE LOGO TO BE ONE UNIT
+===================================== */
+
+@media (max-width:600px){
+
+    .navbar .container{
+
+        display:flex !important;
+
+        align-items:center !important;
+
+        justify-content:space-between !important;
+
+    }
+
+    .navbar .logo{
+
+        display:block !important;
+
+        flex:1 1 auto !important;
+
+        width:auto !important;
+
+        max-width:calc(100% - 55px) !important;
+
+        min-width:0 !important;
+
+        white-space:normal !important;
+
+        line-height:1.05 !important;
+
+    }
+
+    .navbar .logo .program{
+
+        display:block !important;
+
+        width:100% !important;
+
+        margin:0 !important;
+
+        padding:0 !important;
+
+        white-space:normal !important;
+
+        font-size:.78rem !important;
+
+        line-height:1.05 !important;
+
+    }
+
+    .navbar .logo .digital{
+
+        display:block !important;
+
+        width:100% !important;
+
+        margin:3px 0 0 0 !important;
+
+        padding:0 !important;
+
+        white-space:nowrap !important;
+
+        font-size:.82rem !important;
+
+        line-height:1.05 !important;
+
+    }
+
+    .navbar .menu-toggle{
+
+        display:block !important;
+
+        flex:0 0 40px !important;
+
+        width:40px !important;
+
+        min-width:40px !important;
+
+        height:40px !important;
+
+        margin-left:12px !important;
+
+        padding:0 !important;
+
+    }
+
 }
