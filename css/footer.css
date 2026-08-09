@@ -30,7 +30,7 @@
 
     display:grid;
 
-    grid-template-columns:390px 430px 240px 1fr;
+    grid-template-columns:390px 430px 240px 220px;
 
     column-gap:90px;
 
@@ -162,23 +162,31 @@
 
     justify-content:flex-end;
 
-    align-items:flex-end;
+    align-items:center;
 
     justify-self:end;
 
-    align-self:end;
+    align-self:center;
 
-    transform:translateY(-22px);
+    margin-top:-48px;
 
 }
 
 .footer-logo img{
 
-    width:95px;
+    width:250px;
 
     height:auto;
 
     display:block;
+
+    transition:transform .25s ease;
+
+}
+
+.footer-logo img:hover{
+
+    transform:scale(1.03);
 
 }
 

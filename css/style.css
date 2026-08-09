@@ -243,6 +243,8 @@ body{
 
     display:block;
 
+    transform:translateY(20px);
+
 }
 
 .northrop-logo{
@@ -261,7 +263,13 @@ body{
 
 }
 
-.homepage-logos img:hover{
+.unm-logo:hover{
+
+    transform:translateY(10px) scale(1.03);
+
+}
+
+.northrop-logo:hover{
 
     transform:scale(1.03);
 

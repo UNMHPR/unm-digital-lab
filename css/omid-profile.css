@@ -146,9 +146,52 @@ body{
 
     width:100%;
 
-    margin-top:45px;
+    margin-top:25px;
 
 }/* =====================================
+   PROFILE LINKS
+===================================== */
+
+.profile-content a,
+.profile-full a{
+
+    color:#FFFFFF;
+
+    text-decoration:underline;
+
+    text-decoration-thickness:1px;
+
+    text-underline-offset:3px;
+
+    transition:
+        opacity .25s ease;
+
+}
+
+.profile-content a:visited,
+.profile-full a:visited{
+
+    color:#FFFFFF;
+
+}
+
+.profile-content a:hover,
+.profile-full a:hover{
+
+    color:#FFFFFF;
+
+    opacity:.75;
+
+}
+
+.profile-content a:active,
+.profile-full a:active{
+
+    color:#FFFFFF;
+
+}
+
+/* =====================================
    SOCIAL LINKS
 ===================================== */
 

@@ -1,0 +1,585 @@
+/* ==========================================================
+   RESET
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#111111;
+    color:#D9D9D9;
+    font-family:"Roboto",sans-serif;
+    overflow-x:hidden;
+}
+
+/* ==========================================================
+   PAGE
+========================================================== */
+
+.salmon-page{
+
+    width:100%;
+
+}
+.video-section{
+
+    width:min(1450px,92%);
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    margin-bottom:90px;
+
+}
+/* ==========================================================
+   COMMON CONTENT WIDTH
+========================================================== */
+
+.intro-section,
+.artifacts-section,
+.section-two,
+.section-three,
+.gallery-section{
+
+    width:min(1450px,92%);
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero-section{
+
+    width:100%;
+    margin-top:90px;
+    margin-bottom:55px;
+
+}
+
+.hero-image{
+
+    width:65%;
+    max-width:1350px;
+    margin:0 auto;
+    display:block;
+    border-radius:8px;
+
+}
+
+/* ==========================================================
+   PAGE TITLE
+========================================================== */
+
+.page-title{
+
+    width:100%;
+
+    text-align:left;
+
+    color:#FFFFFF;
+
+    font-size:48px;
+
+    font-weight:500;
+
+    margin:0 0 45px 0;
+
+    letter-spacing:.4px;
+
+}
+
+/* ==========================================================
+   INTRO TEXT
+========================================================== */
+
+.intro-text{
+
+    width:100%;
+
+}
+
+.intro-text p{
+
+    font-size:18px;
+    line-height:1.85;
+    color:#D9D9D9;
+    text-align:justify;
+    margin-bottom:24px;
+
+}
+
+.intro-text strong{
+
+    color:#FFFFFF;
+
+}
+
+.intro-text a{
+
+    color:#D9D9D9;
+    text-decoration:underline;
+
+}
+
+.intro-text a:hover{
+
+    color:#FFFFFF;
+
+}/* ==========================================================
+   SKETCHFAB MODELS
+========================================================== */
+
+.artifacts-section{
+
+    margin-top:90px;
+    margin-bottom:90px;
+
+}
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.artifact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:28px;
+
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.artifact-card{
+
+    background:#1A1A1A;
+
+    border:1px solid #2C2C2C;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    transition:
+        transform .30s ease,
+        box-shadow .30s ease;
+
+}
+
+.artifact-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================================
+   IFRAME
+========================================================== */
+
+.artifact-card iframe{
+
+    width:100%;
+
+    height:280px;
+
+    border:none;
+
+    display:block;
+
+}
+
+/* ==========================================================
+   SECTION SPACING
+========================================================== */
+
+.artifacts-section::after{
+
+    content:"";
+
+    display:block;
+
+    height:10px;
+
+}/* ==========================================================
+   SECTION TWO
+========================================================== */
+
+.section-two{
+
+    margin-bottom:100px;
+
+}
+
+/* ==========================================================
+   INTRODUCTION TEXT
+========================================================== */
+
+.section-two .content{
+
+    width:100%;
+
+    margin-bottom:45px;
+
+}
+
+.section-two .content p{
+
+    color:#D9D9D9;
+
+    font-size:18px;
+
+    line-height:1.85;
+
+    text-align:justify;
+
+    margin-bottom:24px;
+
+}
+
+.section-two .content strong{
+
+    color:#FFFFFF;
+
+}
+
+/* ==========================================================
+   VIDEO + TEXT
+========================================================== */
+
+.video-wrapper{
+
+    display:grid;
+
+    grid-template-columns:58% 42%;
+
+    gap:50px;
+
+    align-items:start;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================================
+   VIDEO
+========================================================== */
+
+.video-container{
+
+    width:100%;
+
+}
+
+.video-container iframe{
+
+    width:100%;
+
+    aspect-ratio:16/9;
+
+    border:none;
+
+    border-radius:8px;
+
+    display:block;
+
+}
+
+/* ==========================================================
+   VIDEO TEXT
+========================================================== */
+
+.video-text{
+
+    width:100%;
+
+}
+
+.video-text p{
+
+    color:#D9D9D9;
+
+    font-size:18px;
+
+    line-height:1.85;
+
+    text-align:justify;
+
+    margin-bottom:24px;
+
+}
+
+.video-text strong{
+
+    color:#FFFFFF;
+
+}.video-description{
+
+    width:100%;
+
+    margin-top:35px;
+
+}
+
+.video-description p{
+
+    color:#D9D9D9;
+
+    font-size:18px;
+
+    line-height:1.85;
+
+    text-align:justify;
+
+    margin:0;
+
+}/* ==========================================================
+   SECTION THREE
+========================================================== */
+
+.section-three{
+
+    margin-bottom:100px;
+
+}
+
+/* ==========================================================
+   TWO IMAGES
+========================================================== */
+
+.image-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+
+    margin-bottom:55px;
+
+}
+
+.image-grid img{
+
+    width:100%;
+
+    height:430px;
+
+    object-fit:cover;
+
+    display:block;
+
+    border-radius:8px;
+
+}
+
+/* ==========================================================
+   FINAL TEXT
+========================================================== */
+
+.section-three .content{
+
+    width:100%;
+
+}
+
+.section-three .content p{
+
+    color:#D9D9D9;
+
+    font-size:18px;
+
+    line-height:1.85;
+
+    text-align:justify;
+
+    margin-bottom:24px;
+
+}
+
+.section-three .content strong{
+
+    color:#FFFFFF;
+
+}
+
+/* ==========================================================
+   PROJECT GALLERY
+========================================================== */
+
+.gallery-section{
+
+    margin-bottom:100px;
+
+}
+
+.gallery-section h2{
+
+    color:#FFFFFF;
+
+    text-align:center;
+
+    font-size:34px;
+
+    font-weight:500;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================================
+   GALLERY GRID
+========================================================== */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:24px;
+
+}
+
+.gallery-grid a{
+
+    display:block;
+
+    overflow:hidden;
+
+    border-radius:8px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.04);
+
+    opacity:.90;
+
+}
+
+/* ==========================================================
+   LIGHTBOX
+========================================================== */
+
+.glightbox-clean .gslide-image img{
+
+    border-radius:8px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1400px){
+
+    .artifact-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .video-wrapper{
+
+        grid-template-columns:1fr;
+
+        gap:45px;
+
+    }
+
+    .image-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .image-grid img{
+
+        height:auto;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .page-title{
+
+        font-size:36px;
+
+    }
+
+    .artifact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .artifact-card iframe{
+
+        height:320px;
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .gallery-grid img{
+
+        height:280px;
+
+    }
+
+    .intro-text p,
+    .section-two .content p,
+    .video-text p,
+    .section-three .content p{
+
+        font-size:17px;
+
+    }
+
+}

@@ -1,5 +1,5 @@
 /* =====================================
-   Navigation
+   NAVIGATION
 ===================================== */
 
 .navbar{
@@ -19,6 +19,10 @@
 
 }
 
+/* =====================================
+   CONTAINER
+===================================== */
+
 .container{
 
     max-width:1800px;
@@ -33,7 +37,13 @@
 
     align-items:center;
 
+    position:relative;
+
 }
+
+/* =====================================
+   LOGO
+===================================== */
 
 .logo{
 
@@ -77,6 +87,16 @@
 
 }
 
+/* =====================================
+   DESKTOP NAVIGATION
+===================================== */
+
+nav{
+
+    display:block;
+
+}
+
 nav ul{
 
     display:flex;
@@ -104,5 +124,115 @@ nav a{
 nav a:hover{
 
     color:#FFFFFF;
+
+}
+
+/* =====================================
+   HAMBURGER BUTTON
+===================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:#FFFFFF;
+
+    font-size:32px;
+
+    line-height:1;
+
+    cursor:pointer;
+
+    padding:0;
+
+}/* =====================================
+   TABLET & MOBILE
+===================================== */
+
+@media (max-width:1024px){
+
+    /* Container */
+
+    .container{
+
+        padding:16px 24px;
+
+    }
+
+    /* Show hamburger */
+
+    .menu-toggle{
+
+        display:block;
+
+        z-index:1002;
+
+    }
+
+    /* Mobile navigation */
+
+    nav{
+
+        position:absolute;
+
+        top:100%;
+
+        left:0;
+
+        width:100%;
+
+        background:#111111;
+
+        border-top:1px solid rgba(255,255,255,.08);
+
+        display:none;
+
+    }
+
+    /* Open menu */
+
+    nav.active{
+
+        display:block;
+
+    }
+
+    nav ul{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:0;
+
+        padding:10px 0;
+
+    }
+
+    nav li{
+
+        width:100%;
+
+    }
+
+    nav a{
+
+        display:block;
+
+        padding:18px 24px;
+
+        border-bottom:1px solid rgba(255,255,255,.06);
+
+    }
+
+    nav a:hover{
+
+        background:#1B1B1B;
+
+    }
 
 }
