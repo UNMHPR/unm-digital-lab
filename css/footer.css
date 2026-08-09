@@ -318,7 +318,7 @@
 
     .footer-container{
 
-        grid-template-columns:1fr 1fr 220px 250px;
+        grid-template-columns:1fr 1fr 220px 150px;
 
         column-gap:45px;
 
@@ -355,7 +355,6 @@
     }
 
 }
-
 
 /* =====================================
    TABLETS
@@ -533,7 +532,7 @@
 
     .footer-logo img{
 
-        width:150px;
+        width:180px;
 
         height:auto;
 
