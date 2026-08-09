@@ -1,44 +1,38 @@
-/* =====================================
-   MOBILE NAVIGATION
-===================================== */
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const menuButton = document.querySelector(".menu-toggle");
-    const nav = document.querySelector(".navbar nav");
+    const navigation = document.querySelector(".navbar nav");
 
-    if (!menuButton || !nav) return;
+    if (!menuButton || !navigation) {
+        return;
+    }
 
     menuButton.addEventListener("click", function () {
 
-        nav.classList.toggle("active");
-        menuButton.classList.toggle("active");
+        navigation.classList.toggle("active");
+
+        const isOpen = navigation.classList.contains("active");
+
+        menuButton.setAttribute("aria-expanded", isOpen);
+
+        menuButton.textContent = isOpen ? "✕" : "☰";
 
     });
 
-    /* Close menu when a link is clicked */
 
-    nav.querySelectorAll("a").forEach(function (link) {
+    const menuLinks = navigation.querySelectorAll("a");
+
+    menuLinks.forEach(function (link) {
 
         link.addEventListener("click", function () {
 
-            nav.classList.remove("active");
-            menuButton.classList.remove("active");
+            navigation.classList.remove("active");
+
+            menuButton.setAttribute("aria-expanded", "false");
+
+            menuButton.textContent = "☰";
 
         });
-
-    });
-
-    /* Close menu if window becomes desktop size */
-
-    window.addEventListener("resize", function () {
-
-        if (window.innerWidth > 768) {
-
-            nav.classList.remove("active");
-            menuButton.classList.remove("active");
-
-        }
 
     });
 
