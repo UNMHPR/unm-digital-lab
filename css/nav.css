@@ -473,90 +473,136 @@
     }
 
 }/* =====================================
-   FORCE MOBILE LOGO TO BE ONE UNIT
+   MOBILE FOOTER FIX
 ===================================== */
 
 @media (max-width:600px){
 
-    .navbar .container{
+    .site-footer{
+
+        width:100%;
+
+        box-sizing:border-box;
+
+    }
+
+    .footer-container{
+
+        display:flex !important;
+
+        flex-direction:column !important;
+
+        align-items:flex-start !important;
+
+        width:100%;
+
+        box-sizing:border-box;
+
+        gap:45px;
+
+    }
+
+    .footer-column{
+
+        width:100% !important;
+
+        box-sizing:border-box;
+
+        margin:0 !important;
+
+    }
+
+    .footer-column h3{
+
+        margin-bottom:20px;
+
+    }
+
+    .social-icons{
 
         display:flex !important;
 
         align-items:center !important;
 
-        justify-content:space-between !important;
+        justify-content:flex-start !important;
+
+        gap:20px;
+
+        width:100%;
+
+        margin:0;
 
     }
 
-    .navbar .logo{
+    .social-icons a{
 
-        display:block !important;
+        display:flex !important;
 
-        flex:1 1 auto !important;
+        align-items:center;
 
-        width:auto !important;
+        justify-content:center;
 
-        max-width:calc(100% - 55px) !important;
-
-        min-width:0 !important;
-
-        white-space:normal !important;
-
-        line-height:1.05 !important;
+        flex-shrink:0;
 
     }
 
-    .navbar .logo .program{
+    .social-icons img{
 
-        display:block !important;
+        max-width:40px;
+
+        max-height:40px;
+
+        width:auto;
+
+        height:auto;
+
+        object-fit:contain;
+
+    }
+
+    .footer-logo{
 
         width:100% !important;
+
+        box-sizing:border-box;
+
+        display:flex !important;
+
+        justify-content:flex-start !important;
+
+        align-items:center !important;
 
         margin:0 !important;
 
         padding:0 !important;
 
-        white-space:normal !important;
+    }
 
-        font-size:.78rem !important;
+    .footer-logo a{
 
-        line-height:1.05 !important;
+        display:block;
 
     }
 
-    .navbar .logo .digital{
+    .footer-logo img{
 
-        display:block !important;
+        max-width:110px;
 
-        width:100% !important;
+        width:auto;
 
-        margin:3px 0 0 0 !important;
+        height:auto;
 
-        padding:0 !important;
-
-        white-space:nowrap !important;
-
-        font-size:.82rem !important;
-
-        line-height:1.05 !important;
+        display:block;
 
     }
 
-    .navbar .menu-toggle{
+    .footer-credit{
 
-        display:block !important;
+        width:100%;
 
-        flex:0 0 40px !important;
+        box-sizing:border-box;
 
-        width:40px !important;
-
-        min-width:40px !important;
-
-        height:40px !important;
-
-        margin-left:12px !important;
-
-        padding:0 !important;
+        margin-top:40px;
 
     }
 
