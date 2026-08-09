@@ -16,6 +16,11 @@
 
 }
 
+
+/* =====================================
+   FOOTER CONTAINER
+===================================== */
+
 .footer-container{
 
     width:100%;
@@ -36,8 +41,9 @@
 
     align-items:start;
 
-}
+    box-sizing:border-box;
 
+}
 
 
 /* =====================================
@@ -53,7 +59,6 @@
     justify-content:flex-start;
 
 }
-
 
 
 /* =====================================
@@ -77,7 +82,6 @@
 }
 
 
-
 /* =====================================
    BODY TEXT
 ===================================== */
@@ -85,6 +89,8 @@
 .footer-column p{
 
     margin:0;
+
+    max-width:100%;
 
     font-family:"Roboto",sans-serif;
 
@@ -95,6 +101,49 @@
     line-height:1.7;
 
     color:#000000;
+
+    word-break:normal;
+
+    overflow-wrap:break-word;
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+
+/* =====================================
+   COLUMN SPACING
+===================================== */
+
+.footer-column:first-child{
+
+    padding-right:10px;
+
+}
+
+.footer-column:nth-child(2){
+
+    padding-right:10px;
+
+}
+
+.footer-column:nth-child(3){
+
+    padding-left:5px;
+
+}
+
+
+/* =====================================
+   TYPOGRAPHY
+===================================== */
+
+.footer-column h3,
+.footer-column p{
 
     text-rendering:optimizeLegibility;
 
@@ -151,6 +200,26 @@
 }
 
 
+/* =====================================
+   FOOTER LINKS
+===================================== */
+
+.footer-column a{
+
+    color:#000000;
+
+    text-decoration:none;
+
+    transition:color .25s ease;
+
+}
+
+.footer-column a:hover{
+
+    color:#666666;
+
+}
+
 
 /* =====================================
    FOOTER LOGO
@@ -178,7 +247,11 @@
 
     height:auto;
 
+    max-width:none;
+
     display:block;
+
+    flex-shrink:0;
 
     transition:transform .25s ease;
 
@@ -189,66 +262,6 @@
     transform:scale(1.03);
 
 }
-
-
-
-/* =====================================
-   COLUMN SPACING
-===================================== */
-
-.footer-column:first-child{
-
-    padding-right:10px;
-
-}
-
-.footer-column:nth-child(2){
-
-    padding-right:10px;
-
-}
-
-.footer-column:nth-child(3){
-
-    padding-left:5px;
-
-}/* =====================================
-   FOOTER LINKS
-===================================== */
-
-.footer-column a{
-
-    color:#000000;
-
-    text-decoration:none;
-
-    transition:color .25s ease;
-
-}
-
-.footer-column a:hover{
-
-    color:#666666;
-
-}
-
-
-
-/* =====================================
-   TYPOGRAPHY
-===================================== */
-
-.footer-column h3,
-.footer-column p{
-
-    text-rendering:optimizeLegibility;
-
-    -webkit-font-smoothing:antialiased;
-
-    -moz-osx-font-smoothing:grayscale;
-
-}
-
 
 
 /* =====================================
@@ -265,43 +278,6 @@
     pointer-events:auto;
 
 }
-
-
-
-/* =====================================
-   COLUMN ALIGNMENT
-===================================== */
-
-.footer-column{
-
-    justify-content:flex-start;
-
-}
-
-.footer-column p{
-
-    max-width:100%;
-
-    word-break:normal;
-
-    overflow-wrap:break-word;
-
-}
-
-
-
-/* =====================================
-   FOOTER LOGO ALIGNMENT
-===================================== */
-
-.footer-logo{
-
-    justify-self:end;
-
-    align-self:end;
-
-}
-
 
 
 /* =====================================
@@ -334,7 +310,6 @@
 }
 
 
-
 /* =====================================
    LAPTOPS
 ===================================== */
@@ -343,7 +318,7 @@
 
     .footer-container{
 
-        grid-template-columns:1fr 1fr 220px 150px;
+        grid-template-columns:1fr 1fr 220px 250px;
 
         column-gap:45px;
 
@@ -375,12 +350,11 @@
 
     .footer-logo img{
 
-        width:85px;
+        width:250px;
 
     }
 
 }
-
 
 
 /* =====================================
@@ -407,21 +381,19 @@
 
         align-self:start;
 
+        margin-top:0;
+
         transform:none;
 
     }
 
     .footer-logo img{
 
-        width:80px;
+        width:150px;
 
     }
 
-}
-
-
-
-/* =====================================
+}/* =====================================
    MOBILE
 ===================================== */
 
@@ -429,11 +401,37 @@
 
     .footer-container{
 
-        grid-template-columns:1fr;
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        width:100%;
+
+        max-width:none;
+
+        min-height:auto;
 
         padding:30px 25px;
 
         row-gap:25px;
+
+        column-gap:0;
+
+        box-sizing:border-box;
+
+    }
+
+    .footer-column{
+
+        width:100%;
+
+        padding:0 !important;
+
+        margin:0;
+
+        box-sizing:border-box;
 
     }
 
@@ -441,7 +439,7 @@
 
         font-size:20px;
 
-        margin-bottom:16px;
+        margin:0 0 16px;
 
     }
 
@@ -453,102 +451,18 @@
 
     }
 
+
+    /* =====================================
+       SOCIAL MEDIA — MOBILE
+    ===================================== */
+
     .social-icons{
 
-        gap:12px;
+        display:flex;
 
-    }
-
-    .social-icons img{
-
-        width:26px;
-
-        height:26px;
-
-    }
-
-    .footer-logo{
+        align-items:center;
 
         justify-content:flex-start;
-
-        justify-self:start;
-
-        align-self:start;
-
-        transform:none;
-
-    }
-
-    .footer-logo img {
-    width:150px;
-    height:auto;
-}
-
-}/* =====================================
-   FOOTER CREDIT
-===================================== */
-
-.footer-credit{
-    width:100%;
-    padding:18px 0 22px;
-    text-align:center;
-    font-family:"Roboto",sans-serif;
-    font-size:13px;
-    color:#666666;
-    border-top:1px solid #e9e9e9;
-}/* =====================================
-   MOBILE FOOTER FIX
-===================================== */
-
-@media (max-width:600px){
-
-    .site-footer{
-
-        width:100%;
-
-        box-sizing:border-box;
-
-    }
-
-    .footer-container{
-
-        display:flex !important;
-
-        flex-direction:column !important;
-
-        align-items:flex-start !important;
-
-        width:100%;
-
-        box-sizing:border-box;
-
-        gap:45px;
-
-    }
-
-    .footer-column{
-
-        width:100% !important;
-
-        box-sizing:border-box;
-
-        margin:0 !important;
-
-    }
-
-    .footer-column h3{
-
-        margin-bottom:20px;
-
-    }
-
-    .social-icons{
-
-        display:flex !important;
-
-        align-items:center !important;
-
-        justify-content:flex-start !important;
 
         gap:20px;
 
@@ -560,7 +474,7 @@
 
     .social-icons a{
 
-        display:flex !important;
+        display:flex;
 
         align-items:center;
 
@@ -572,33 +486,42 @@
 
     .social-icons img{
 
-        max-width:40px;
+        width:40px;
 
-        max-height:40px;
-
-        width:auto;
-
-        height:auto;
+        height:40px;
 
         object-fit:contain;
 
+        display:block;
+
     }
+
+
+    /* =====================================
+       UNM LOGO — MOBILE
+    ===================================== */
 
     .footer-logo{
 
-        width:100% !important;
+        width:100%;
+
+        display:flex;
+
+        justify-content:flex-start;
+
+        align-items:center;
+
+        justify-self:auto;
+
+        align-self:auto;
+
+        margin:0;
+
+        padding:0;
+
+        transform:none;
 
         box-sizing:border-box;
-
-        display:flex !important;
-
-        justify-content:flex-start !important;
-
-        align-items:center !important;
-
-        margin:0 !important;
-
-        padding:0 !important;
 
     }
 
@@ -610,15 +533,22 @@
 
     .footer-logo img{
 
-        max-width:110px;
-
-        width:auto;
+        width:150px;
 
         height:auto;
 
+        max-width:none;
+
         display:block;
 
+        flex-shrink:0;
+
     }
+
+
+    /* =====================================
+       FOOTER CREDIT — MOBILE
+    ===================================== */
 
     .footer-credit{
 
@@ -626,8 +556,47 @@
 
         box-sizing:border-box;
 
-        margin-top:40px;
+        margin-top:0;
+
+        padding:18px 20px 22px;
+
+        text-align:center;
+
+        font-family:"Roboto",sans-serif;
+
+        font-size:13px;
+
+        line-height:1.5;
+
+        color:#666666;
+
+        border-top:1px solid #e9e9e9;
 
     }
+
+}
+
+
+/* =====================================
+   FOOTER CREDIT
+===================================== */
+
+.footer-credit{
+
+    width:100%;
+
+    padding:18px 0 22px;
+
+    text-align:center;
+
+    font-family:"Roboto",sans-serif;
+
+    font-size:13px;
+
+    line-height:1.5;
+
+    color:#666666;
+
+    border-top:1px solid #e9e9e9;
 
 }
