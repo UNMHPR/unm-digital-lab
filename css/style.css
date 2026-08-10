@@ -464,20 +464,20 @@ a:hover{
 @media (max-width:650px){
 
     /* =====================================
-       HERO IMAGE — MOBILE
-    ====================================== */
+   HERO IMAGE — MOBILE
+===================================== */
 
-    .hero-board{
+.hero-board{
 
-        width:100%;
+    display:block;
 
-        height:320px;
+    width:100%;
 
-        object-fit:cover;
+    height:auto;
 
-        object-position:70% center;
+    object-fit:contain;
 
-    }
+}
 
 
     /* =====================================
