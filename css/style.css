@@ -546,4 +546,22 @@ a:hover{
 
     }
 
+}/* ==========================================
+   MOBILE HERO IMAGE
+========================================== */
+
+@media (max-width:650px){
+
+    .hero-board{
+
+        content:url("../assets/images/homepage-board-mobile.jpg");
+
+        width:100%;
+
+        height:auto;
+
+        display:block;
+
+    }
+
 }
