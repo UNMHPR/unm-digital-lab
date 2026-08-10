@@ -549,6 +549,12 @@ a:hover{
 
 @media (max-width:650px){
 
+    .hero{
+
+        padding-top:60px;
+
+    }
+
     .hero-board{
 
         content:url("../assets/images/homepage-board-mobile.png");
