@@ -1,428 +1,1017 @@
 /* ==========================================
-RESET
+   RESET
 ========================================== */
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html{
-
     scroll-behavior:smooth;
-
 }
 
 body{
-
     background:#000000;
-
     color:#FFFFFF;
-
     font-family:"Inter",sans-serif;
-
     overflow-x:hidden;
-
 }
 
 
 /* ==========================================
-HERO
+   HERO
 ========================================== */
 
 .hero{
-
     position:relative;
-
     width:100%;
-
 }
 
 .hero-board{
-
     display:block;
-
     width:100%;
-
     height:auto;
-
 }
 
 .hero-content{
-
     position:absolute;
-
     inset:0;
-
 }
 
 
 /* ==========================================
-INTRO
+   INTRODUCTION
 ========================================== */
 
 .intro{
-
     position:absolute;
 
     left:48px;
-
     top:95px;
 
     width:930px;
-
+    max-width:calc(100% - 96px);
 }
 
 .intro p{
-
     color:#ECECEC;
 
     font-size:1.05rem;
-
     font-weight:400;
 
     line-height:1.62;
 
     text-align:justify;
-
     text-align-last:left;
-
 }
 
 
 /* ==========================================
-TITLE
+   TITLE
 ========================================== */
 
 .title-block{
-
     position:absolute;
 
     left:48px;
-
     top:355px;
-
 }
 
 .title-block h2{
-
     color:#D8D8D8;
 
     font-size:3rem;
-
     font-weight:300;
 
+    line-height:1.1;
     letter-spacing:.3px;
-
 }
 
 .title-block h1{
-
     margin-top:8px;
 
     color:#FFFFFF;
 
     font-size:6rem;
-
     line-height:.92;
 
     font-weight:300;
-
 }
 
 .title-line{
-
     width:250px;
-
     height:2px;
 
     margin-top:22px;
 
     background:#D8D8D8;
-
 }
 
 
 /* ==========================================
-SITE LINKS
+   SITE LINKS
 ========================================== */
 
 .site-links{
-
     position:absolute;
 
     left:48px;
-
     top:548px;
 
     display:flex;
-
     flex-direction:column;
 
     gap:9px;
-
 }
 
 .site-links a{
-
     color:#D7D7D7;
 
     text-decoration:none;
 
     font-size:1.02rem;
-
     font-weight:400;
 
     letter-spacing:.25px;
-
     line-height:1.45;
 
     transition:.25s ease;
-
 }
 
 .site-links a:hover{
-
     color:#FFFFFF;
-
     transform:translateX(8px);
-
 }
 
 
 /* ==========================================
-HOMEPAGE LOCATION
+   HOMEPAGE LOCATION
 ========================================== */
 
 .homepage-location{
-
     position:absolute;
 
     left:48px;
-
     bottom:92px;
-
 }
 
 .homepage-location p{
-
     color:#ECECEC;
 
     font-size:1.05rem;
-
     line-height:1.45;
 
     font-weight:400;
-
 }
 
 
 /* ==========================================
-PARTNER LOGOS
+   PARTNER LOGOS
 ========================================== */
 
 .homepage-logos{
-
     position:absolute;
 
     right:55px;
-
     bottom:88px;
 
     display:flex;
-
     align-items:flex-end;
 
     gap:46px;
-
 }
 
 .unm-logo{
-
     width:300px;
-
     height:auto;
 
     display:block;
 
     transform:translateY(20px);
-
 }
 
 .northrop-logo{
-
     width:240px;
-
     height:auto;
 
     display:block;
-
 }
 
 .homepage-logos img{
-
     transition:.25s ease;
-
 }
 
 .unm-logo:hover{
-
     transform:translateY(10px) scale(1.03);
-
 }
 
 .northrop-logo:hover{
-
     transform:scale(1.03);
-
 }
 
 
 /* ==========================================
-GENERAL LINKS
+   GENERAL LINKS
 ========================================== */
 
 a{
-
     transition:.25s;
-
 }
 
 a:hover{
-
     opacity:.95;
-
 }
 
 
 /* ==========================================
-TEXT SELECTION
+   TEXT SELECTION
 ========================================== */
 
 ::selection{
-
     background:#FFFFFF;
-
     color:#000000;
-
-}
-
-
-/* ==========================================
-LARGE SCREENS
+}/* ==========================================
+   SMALL DESKTOP
+   1401px – 1600px
 ========================================== */
 
-@media (max-width:1600px){
+@media (max-width:1600px) and (min-width:1401px){
+
+    /* --------------------------------------
+       HERO
+    -------------------------------------- */
+
+    .hero{
+        margin-top:62px;
+    }
+
+
+    /* --------------------------------------
+       HERO CONTENT
+    -------------------------------------- */
+
+    .hero-content{
+        position:absolute;
+        inset:0;
+    }
+
+
+    /* --------------------------------------
+       INTRODUCTION
+    -------------------------------------- */
 
     .intro{
+        left:3%;
+        top:6%;
 
-        width:860px;
-
-    }
-
-    .title-block{
-
-        top:345px;
-
-    }
-
-    .site-links{
-
-        top:535px;
-
-    }
-
-}
-
-
-/* ==========================================
-LAPTOPS
-========================================== */
-
-@media (max-width:1400px){
-
-    .intro{
-
-        left:40px;
-
-        top:90px;
-
-        width:760px;
-
+        width:40%;
+        max-width:620px;
     }
 
     .intro p{
+        font-size:clamp(.9rem, 1vw, 1rem);
+        line-height:1.5;
 
-        font-size:1rem;
-
+        text-align:justify;
+        text-align-last:left;
     }
 
+
+    /* --------------------------------------
+       TITLE
+    -------------------------------------- */
+
     .title-block{
-
-        left:40px;
-
-        top:340px;
-
+        left:3%;
+        top:52%;
     }
 
     .title-block h2{
-
-        font-size:2.6rem;
-
+        font-size:clamp(2rem, 2.7vw, 2.6rem);
+        line-height:1.1;
     }
 
     .title-block h1{
+        margin-top:7px;
 
-        font-size:5.2rem;
-
+        font-size:clamp(4rem, 5.2vw, 5.2rem);
+        line-height:.92;
     }
+
+    .title-line{
+        width:220px;
+        margin-top:18px;
+    }
+
+
+    /* --------------------------------------
+       PROJECT LINKS
+    -------------------------------------- */
 
     .site-links{
+        left:3%;
+        top:78%;
 
-        left:40px;
-
-        top:520px;
-
+        gap:6px;
     }
+
+    .site-links a{
+        font-size:.95rem;
+        line-height:1.35;
+    }
+
+
+    /* --------------------------------------
+       LOCATION
+    -------------------------------------- */
 
     .homepage-location{
+        left:3%;
 
-        left:40px;
-
-        bottom:72px;
-
+        bottom:5%;
+        top:auto;
     }
 
+    .homepage-location p{
+        font-size:.95rem;
+        line-height:1.4;
+    }
+
+
+    /* --------------------------------------
+       PARTNER LOGOS
+    -------------------------------------- */
+
     .homepage-logos{
+        right:3%;
+        bottom:5%;
 
-        right:40px;
+        gap:35px;
+    }
 
-        bottom:68px;
+    .unm-logo{
+        width:240px;
+    }
 
+    .northrop-logo{
+        width:200px;
     }
 
 }
 
 
 /* ==========================================
-TABLETS
+   LAPTOPS
+   993px – 1400px
 ========================================== */
 
-@media (max-width:992px){
+@media (max-width:1400px) and (min-width:993px){
+
+    /* --------------------------------------
+       HERO
+    -------------------------------------- */
+
+    .hero{
+        margin-top:62px;
+    }
+
+
+    /* --------------------------------------
+       HERO CONTENT
+    -------------------------------------- */
+
+    .hero-content{
+        position:absolute;
+        inset:0;
+    }
+
+
+    /* --------------------------------------
+       INTRODUCTION
+
+       Keep the paragraph clearly on the
+       LEFT side of the image.
+    -------------------------------------- */
+
+    .intro{
+        left:3%;
+        top:6%;
+
+        width:39%;
+        max-width:550px;
+    }
+
+    .intro p{
+        font-size:clamp(.78rem, .95vw, .95rem);
+        line-height:1.45;
+
+        /* IMPORTANT:
+           Keep tablet/laptop text justified. */
+        text-align:justify;
+        text-align-last:left;
+    }
+
+
+    /* --------------------------------------
+       TITLE
+    -------------------------------------- */
+
+    .title-block{
+        left:3%;
+        top:51%;
+    }
+
+    .title-block h2{
+        font-size:clamp(1.8rem, 2.8vw, 2.6rem);
+        line-height:1.1;
+    }
+
+    .title-block h1{
+        margin-top:7px;
+
+        font-size:clamp(3.3rem, 5.5vw, 5.2rem);
+        line-height:.92;
+    }
+
+    .title-line{
+        width:clamp(160px, 20vw, 240px);
+        margin-top:18px;
+    }
+
+
+    /* --------------------------------------
+       PROJECT LINKS
+    -------------------------------------- */
+
+    .site-links{
+        left:3%;
+        top:78%;
+
+        gap:6px;
+    }
+
+    .site-links a{
+        font-size:clamp(.78rem, .95vw, 1rem);
+        line-height:1.35;
+    }
+
+
+    /* --------------------------------------
+       LOCATION
+    -------------------------------------- */
+
+    .homepage-location{
+        left:3%;
+
+        bottom:4%;
+        top:auto;
+    }
+
+    .homepage-location p{
+        font-size:clamp(.78rem, .95vw, 1rem);
+        line-height:1.4;
+    }
+
+
+    /* --------------------------------------
+       PARTNER LOGOS
+    -------------------------------------- */
+
+    .homepage-logos{
+        right:3%;
+        bottom:4%;
+
+        gap:clamp(20px, 3vw, 40px);
+    }
+
+    .unm-logo{
+        width:clamp(170px, 19vw, 250px);
+    }
+
+    .northrop-logo{
+        width:clamp(140px, 15vw, 210px);
+    }
+
+}/* ==========================================
+   TABLETS
+   651px – 992px
+========================================== */
+
+@media (max-width:992px) and (min-width:651px){
+
+    /* --------------------------------------
+       HERO
+
+       The navigation is fixed, so the hero
+       needs to begin below it.
+    -------------------------------------- */
+
+    .hero{
+        margin-top:62px;
+
+        /*
+        Give the hero enough vertical room
+        for the introduction, title, links,
+        location, and logos.
+        */
+        min-height:820px;
+
+        background:#000000;
+    }
+
+
+    /* --------------------------------------
+       HERO BOARD
+
+       Keep the desktop/tablet board image
+       proportional.
+    -------------------------------------- */
+
+    .hero-board{
+        display:block;
+
+        width:100%;
+        height:auto;
+    }
+
+
+    /* --------------------------------------
+       HERO CONTENT
+    -------------------------------------- */
+
+    .hero-content{
+        position:absolute;
+
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+
+        min-height:820px;
+    }
+
+
+    /* --------------------------------------
+       INTRODUCTION
+
+       Keep it on the LEFT and away from
+       the 3D model.
+    -------------------------------------- */
+
+    .intro{
+        position:absolute;
+
+        left:3%;
+        top:6%;
+
+        width:47%;
+        max-width:460px;
+    }
+
+    .intro p{
+        font-size:clamp(.78rem, 1.05vw, .95rem);
+
+        line-height:1.48;
+
+        /*
+        IMPORTANT:
+        Tablet text stays justified.
+        */
+        text-align:justify;
+        text-align-last:left;
+    }
+
+
+    /* --------------------------------------
+       TITLE
+    -------------------------------------- */
+
+    .title-block{
+        position:absolute;
+
+        left:3%;
+        top:52%;
+    }
+
+    .title-block h2{
+        font-size:clamp(1.8rem, 3vw, 2.5rem);
+
+        line-height:1.1;
+    }
+
+    .title-block h1{
+        margin-top:7px;
+
+        font-size:clamp(3.2rem, 5.8vw, 5rem);
+
+        line-height:.92;
+    }
+
+    .title-line{
+        width:clamp(170px, 20vw, 230px);
+
+        margin-top:18px;
+    }
+
+
+    /* --------------------------------------
+       PROJECT LINKS
+
+       Keep them below the title.
+       Do NOT use percentage positioning
+       based on the old layout.
+    -------------------------------------- */
+
+    .site-links{
+        position:absolute;
+
+        left:3%;
+        top:72%;
+
+        display:flex;
+        flex-direction:column;
+
+        gap:6px;
+    }
+
+    .site-links a{
+        font-size:clamp(.78rem, 1vw, .95rem);
+
+        line-height:1.35;
+
+        white-space:nowrap;
+    }
+
+
+    /* --------------------------------------
+       LOCATION
+    -------------------------------------- */
+
+    .homepage-location{
+        position:absolute;
+
+        left:3%;
+        bottom:5%;
+
+        top:auto;
+    }
+
+    .homepage-location p{
+        font-size:clamp(.78rem, 1vw, .95rem);
+
+        line-height:1.4;
+    }
+
+
+    /* --------------------------------------
+       PARTNER LOGOS
+    -------------------------------------- */
+
+    .homepage-logos{
+        position:absolute;
+
+        right:3%;
+        bottom:5%;
+
+        display:flex;
+        align-items:flex-end;
+
+        gap:clamp(18px, 2.5vw, 30px);
+    }
+
+    .unm-logo{
+        width:clamp(145px, 18vw, 200px);
+    }
+
+    .northrop-logo{
+        width:clamp(115px, 15vw, 175px);
+    }
+
+}
+
+
+/* ==========================================
+   SMALL TABLETS
+   651px – 800px
+========================================== */
+
+@media (max-width:800px) and (min-width:651px){
+
+    .hero{
+        min-height:780px;
+    }
+
+    .hero-content{
+        min-height:780px;
+    }
+
+
+    /* --------------------------------------
+       INTRODUCTION
+    -------------------------------------- */
+
+    .intro{
+        left:4%;
+
+        top:5%;
+
+        width:48%;
+        max-width:390px;
+    }
+
+    .intro p{
+        font-size:.78rem;
+
+        line-height:1.45;
+
+        text-align:justify;
+        text-align-last:left;
+    }
+
+
+    /* --------------------------------------
+       TITLE
+    -------------------------------------- */
+
+    .title-block{
+        left:4%;
+        top:50%;
+    }
+
+    .title-block h2{
+        font-size:1.8rem;
+    }
+
+    .title-block h1{
+        font-size:3.6rem;
+    }
+
+    .title-line{
+        width:175px;
+        margin-top:16px;
+    }
+
+
+    /* --------------------------------------
+       PROJECT LINKS
+    -------------------------------------- */
+
+    .site-links{
+        left:4%;
+        top:70%;
+
+        gap:5px;
+    }
+
+    .site-links a{
+        font-size:.78rem;
+        line-height:1.3;
+    }
+
+
+    /* --------------------------------------
+       LOCATION
+    -------------------------------------- */
+
+    .homepage-location{
+        left:4%;
+        bottom:5%;
+    }
+
+    .homepage-location p{
+        font-size:.78rem;
+        line-height:1.35;
+    }
+
+
+    /* --------------------------------------
+       LOGOS
+    -------------------------------------- */
+
+    .homepage-logos{
+        right:4%;
+        bottom:5%;
+
+        gap:18px;
+    }
+
+    .unm-logo{
+        width:155px;
+    }
+
+    .northrop-logo{
+        width:125px;
+    }
+
+}/* ==========================================
+   MOBILE
+   650px and below
+========================================== */
+
+@media (max-width:650px){
+
+    /* --------------------------------------
+       HERO
+    -------------------------------------- */
+
+    .hero{
+        margin-top:64px;
+        width:100%;
+    }
+
+
+    /* --------------------------------------
+       MOBILE HERO IMAGE
+    -------------------------------------- */
+
+    .hero-board{
+
+        display:block;
+
+        width:100%;
+        height:auto;
+
+        /*
+        Use the dedicated mobile image.
+        Desktop/tablet continue using
+        homepage-board.jpg from the HTML.
+        */
+        content:url("../assets/images/homepage-board-mobile.png");
+
+    }
+
+
+    /* --------------------------------------
+       HERO CONTENT
+       Put content BELOW the image
+    -------------------------------------- */
 
     .hero-content{
 
         position:relative;
 
-        padding:40px 25px;
+        inset:auto;
+
+        width:100%;
+        height:auto;
+
+        padding:30px 20px 45px;
+
+        display:flex;
+        flex-direction:column;
+
+        align-items:flex-start;
 
     }
 
-    .intro,
-    .title-block,
-    .site-links,
-    .homepage-location,
+
+    /* --------------------------------------
+       INTRODUCTION
+    -------------------------------------- */
+
+    .intro{
+
+        position:relative;
+
+        left:auto;
+        top:auto;
+        right:auto;
+        bottom:auto;
+
+        width:100%;
+        max-width:none;
+
+        margin:0 0 35px 0;
+
+    }
+
+    .intro p{
+
+        color:#ECECEC;
+
+        font-size:.95rem;
+
+        line-height:1.55;
+
+        text-align:justify;
+        text-align-last:left;
+
+    }
+
+
+    /* --------------------------------------
+       TITLE
+    -------------------------------------- */
+
+    .title-block{
+
+        position:relative;
+
+        left:auto;
+        top:auto;
+        right:auto;
+        bottom:auto;
+
+        width:100%;
+
+        margin:0 0 32px 0;
+
+    }
+
+    .title-block h2{
+
+        font-size:1.7rem;
+
+        line-height:1.05;
+
+    }
+
+    .title-block h1{
+
+        margin-top:7px;
+
+        font-size:3rem;
+
+        line-height:.92;
+
+    }
+
+    .title-line{
+
+        width:170px;
+
+        margin-top:18px;
+
+    }
+
+
+    /* --------------------------------------
+       PROJECT LINKS
+    -------------------------------------- */
+
+    .site-links{
+
+        position:relative;
+
+        left:auto;
+        top:auto;
+        right:auto;
+        bottom:auto;
+
+        width:100%;
+
+        display:flex;
+        flex-direction:column;
+
+        gap:8px;
+
+        margin:0 0 32px 0;
+
+    }
+
+    .site-links a{
+
+        font-size:1rem;
+
+        line-height:1.4;
+
+    }
+
+
+    /* --------------------------------------
+       LOCATION
+    -------------------------------------- */
+
+    .homepage-location{
+
+        position:relative;
+
+        left:auto;
+        top:auto;
+        right:auto;
+        bottom:auto;
+
+        width:100%;
+
+        margin:0 0 32px 0;
+
+    }
+
+    .homepage-location p{
+
+        font-size:.95rem;
+
+        line-height:1.45;
+
+    }
+
+
+    /* --------------------------------------
+       PARTNER LOGOS
+    -------------------------------------- */
+
     .homepage-logos{
 
         position:relative;
@@ -434,91 +1023,169 @@ TABLETS
 
         width:100%;
 
-        margin-bottom:40px;
-
-    }
-
-    .homepage-logos{
-
         display:flex;
 
-        gap:30px;
+        flex-direction:row;
 
         align-items:center;
 
-    }
+        justify-content:space-between;
 
-    .title-block h2{
+        gap:20px;
 
-        font-size:2.2rem;
-
-    }
-
-    .title-block h1{
-
-        font-size:4rem;
-
-    }
-
-}
-
-
-/* ==========================================
-MOBILE
-========================================== */
-
-@media (max-width:650px){
-
-    .intro{
-
-        width:100%;
-
-    }
-
-    .intro p{
-
-        font-size:.95rem;
-
-    }
-
-    .title-block h2{
-
-        font-size:1.7rem;
-
-    }
-
-    .title-block h1{
-
-        font-size:3rem;
-
-    }
-
-    .title-line{
-
-        width:170px;
-
-    }
-
-    .homepage-logos{
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        gap:18px;
+        margin:0;
 
     }
 
     .unm-logo{
 
-        width:180px;
+        width:45%;
+        max-width:190px;
+
+        height:auto;
+
+        transform:none;
 
     }
 
     .northrop-logo{
 
-        width:170px;
+        width:38%;
+        max-width:170px;
 
+        height:auto;
+
+    }
+
+
+    /* --------------------------------------
+       DISABLE DESKTOP HOVER MOVEMENT
+    -------------------------------------- */
+
+    .unm-logo:hover{
+        transform:none;
+    }
+
+    .northrop-logo:hover{
+        transform:none;
+    }
+
+}/* ==========================================
+   VERY SMALL PHONES
+   400px and below
+========================================== */
+
+@media (max-width:400px){
+
+    /* --------------------------------------
+       HERO
+    -------------------------------------- */
+
+    .hero{
+        margin-top:64px;
+    }
+
+
+    /* --------------------------------------
+       HERO CONTENT
+    -------------------------------------- */
+
+    .hero-content{
+        padding:24px 18px 40px;
+    }
+
+
+    /* --------------------------------------
+       INTRODUCTION
+    -------------------------------------- */
+
+    .intro{
+        margin-bottom:28px;
+    }
+
+    .intro p{
+        font-size:.88rem;
+
+        line-height:1.5;
+
+        text-align:justify;
+        text-align-last:left;
+    }
+
+
+    /* --------------------------------------
+       TITLE
+    -------------------------------------- */
+
+    .title-block{
+        margin-bottom:26px;
+    }
+
+    .title-block h2{
+        font-size:1.55rem;
+    }
+
+    .title-block h1{
+        font-size:2.7rem;
+    }
+
+    .title-line{
+        width:150px;
+
+        margin-top:17px;
+    }
+
+
+    /* --------------------------------------
+       PROJECT LINKS
+    -------------------------------------- */
+
+    .site-links{
+        gap:6px;
+
+        margin-bottom:28px;
+    }
+
+    .site-links a{
+        font-size:.92rem;
+
+        line-height:1.4;
+    }
+
+
+    /* --------------------------------------
+       LOCATION
+    -------------------------------------- */
+
+    .homepage-location{
+        margin-bottom:28px;
+    }
+
+    .homepage-location p{
+        font-size:.9rem;
+
+        line-height:1.4;
+    }
+
+
+    /* --------------------------------------
+       PARTNER LOGOS
+    -------------------------------------- */
+
+    .homepage-logos{
+        gap:16px;
+    }
+
+    .unm-logo{
+        width:165px;
+
+        max-width:48%;
+    }
+
+    .northrop-logo{
+        width:155px;
+
+        max-width:43%;
     }
 
 }
