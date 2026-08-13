@@ -389,6 +389,12 @@ body{
         gap:40px;
 
     }
+    .video,
+.model{
+
+    width:100%;
+
+}
 
     .feature-images{
 
