@@ -426,7 +426,7 @@ body{
 
     .hero-image{
 
-        padding-top:25px;
+        padding-top:105px;
 
         margin-bottom:35px;
 
@@ -491,6 +491,12 @@ body{
 
 
 @media (max-width:480px){
+
+    .hero-image{
+
+        padding-top:100px;
+
+    }
 
     .project-container{
 
