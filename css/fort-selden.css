@@ -519,26 +519,4 @@ body{
 
     }
 
-}/* ==========================================
-   FIXED NAVIGATION — HERO OFFSET
-========================================== */
-
-@media (max-width:650px){
-
-    .project-hero{
-
-        padding-top:148px;
-
-    }
-
-}
-
-@media (min-width:651px) and (max-width:992px){
-
-    .project-hero{
-
-        padding-top:160px;
-
-    }
-
 }
