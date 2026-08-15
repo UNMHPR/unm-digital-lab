@@ -168,7 +168,7 @@ body{
 
     display:grid;
 
-    grid-template-columns:62% 38%;
+    grid-template-columns:minmax(0, 58%) minmax(0, 42%);
 
     gap:28px;
 
@@ -207,6 +207,8 @@ body{
     flex-direction:column;
 
     justify-content:flex-start;
+
+    min-width:0;
 
 }
 
