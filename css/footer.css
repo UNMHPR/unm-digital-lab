@@ -31,13 +31,17 @@
 
     min-height:290px;
 
-    padding:40px 70px 18px;
+    padding:32px 70px 24px;
 
     display:grid;
 
-    grid-template-columns:390px 430px 240px 220px;
+    grid-template-columns:
+        minmax(280px, 1fr)
+        minmax(320px, 1.1fr)
+        minmax(200px, .7fr)
+        minmax(200px, .7fr);
 
-    column-gap:90px;
+    column-gap:70px;
 
     align-items:start;
 
@@ -57,6 +61,10 @@
     flex-direction:column;
 
     justify-content:flex-start;
+
+    align-items:flex-start;
+
+    min-width:0;
 
 }
 
@@ -151,7 +159,10 @@
 
     -moz-osx-font-smoothing:grayscale;
 
-}/* =====================================
+}
+
+
+/* =====================================
    SOCIAL MEDIA
 ===================================== */
 
@@ -222,24 +233,39 @@
 
 
 /* =====================================
-   FOOTER LOGO
+   UNM FOOTER LOGO
 ===================================== */
 
 .footer-logo{
 
     display:flex;
 
-    justify-content:flex-end;
+    justify-content:flex-start;
 
-    align-items:center;
+    align-items:flex-start;
 
-    justify-self:end;
+    justify-self:start;
 
-    align-self:center;
+    align-self:start;
 
-    margin-top:115px;
+    width:100%;
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
 
 }
+
+
+/*
+   The logo now starts at the same vertical
+   position as the footer headings.
+
+   No negative margin.
+   No transform.
+*/
 
 .footer-logo img{
 
@@ -247,11 +273,15 @@
 
     height:auto;
 
-    max-width:none;
+    max-width:100%;
 
     display:block;
 
     flex-shrink:0;
+
+    margin:0;
+
+    padding:0;
 
     transition:transform .25s ease;
 
@@ -291,7 +321,10 @@
         opacity .20s ease,
         transform .20s ease;
 
-}/* =====================================
+}
+
+
+/* =====================================
    LARGE DESKTOPS
 ===================================== */
 
@@ -301,9 +334,15 @@
 
         max-width:1500px;
 
-        padding:38px 55px 15px;
+        padding:32px 55px 24px;
 
-        column-gap:70px;
+        column-gap:55px;
+
+    }
+
+    .footer-logo img{
+
+        width:230px;
 
     }
 
@@ -318,11 +357,15 @@
 
     .footer-container{
 
-        grid-template-columns:1fr 1fr 220px 150px;
+        grid-template-columns:
+            minmax(240px, 1fr)
+            minmax(280px, 1fr)
+            minmax(180px, .7fr)
+            minmax(170px, .7fr);
 
-        column-gap:45px;
+        column-gap:40px;
 
-        padding:35px 40px 15px;
+        padding:32px 40px 24px;
 
         min-height:260px;
 
@@ -342,45 +385,19 @@
 
     }
 
-    .footer-logo{
 
-        transform:translateY(-55px);
-
-    }
-
-    .footer-logo img{
-
-        width:250px;
-
-    }
-
-}
-
-/* =====================================
-   TABLETS
-===================================== */
-
-@media (max-width:992px){
-
-    .footer-container{
-
-        grid-template-columns:1fr 1fr;
-
-        row-gap:35px;
-
-        min-height:auto;
-
-    }
+    /* Logo stays at the top.
+       It is NOT moved vertically. */
 
     .footer-logo{
-
-        justify-content:flex-start;
-
-        justify-self:start;
 
         align-self:start;
 
-        margin-top:0;
+        justify-self:start;
+
+        margin:0;
+
+        padding:0;
 
         transform:none;
 
@@ -388,11 +405,84 @@
 
     .footer-logo img{
 
-        width:150px;
+        width:210px;
 
     }
 
-}/* =====================================
+}
+
+
+/* =====================================
+   TABLETS
+===================================== */
+
+@media (max-width:992px) and (min-width:651px){
+
+    .footer-container{
+
+        grid-template-columns:1fr 1fr;
+
+        column-gap:45px;
+
+        row-gap:35px;
+
+        min-height:auto;
+
+        padding:35px 35px 30px;
+
+    }
+
+
+    .footer-column h3{
+
+        font-size:21px;
+
+        margin-bottom:24px;
+
+    }
+
+
+    .footer-column p{
+
+        font-size:19px;
+
+        line-height:1.55;
+
+    }
+
+
+    /* =================================
+       LOGO — TABLET
+    ================================= */
+
+    .footer-logo{
+
+        width:auto;
+
+        justify-self:start;
+
+        align-self:start;
+
+        margin:0;
+
+        padding:0;
+
+        transform:none;
+
+    }
+
+    .footer-logo img{
+
+        width:190px;
+
+        max-width:190px;
+
+    }
+
+}
+
+
+/* =====================================
    MOBILE
 ===================================== */
 
@@ -422,6 +512,7 @@
 
     }
 
+
     .footer-column{
 
         width:100%;
@@ -434,6 +525,7 @@
 
     }
 
+
     .footer-column h3{
 
         font-size:20px;
@@ -441,6 +533,7 @@
         margin:0 0 16px;
 
     }
+
 
     .footer-column p{
 
@@ -451,9 +544,9 @@
     }
 
 
-    /* =====================================
+    /* =================================
        SOCIAL MEDIA — MOBILE
-    ===================================== */
+    ================================= */
 
     .social-icons{
 
@@ -496,9 +589,9 @@
     }
 
 
-    /* =====================================
+    /* =================================
        UNM LOGO — MOBILE
-    ===================================== */
+    ================================= */
 
     .footer-logo{
 
@@ -508,7 +601,7 @@
 
         justify-content:flex-start;
 
-        align-items:center;
+        align-items:flex-start;
 
         justify-self:auto;
 
@@ -524,11 +617,13 @@
 
     }
 
+
     .footer-logo a{
 
         display:block;
 
     }
+
 
     .footer-logo img{
 
@@ -536,18 +631,22 @@
 
         height:auto;
 
-        max-width:none;
+        max-width:185px;
 
         display:block;
 
         flex-shrink:0;
 
+        margin:0;
+
+        padding:0;
+
     }
 
 
-    /* =====================================
+    /* =================================
        FOOTER CREDIT — MOBILE
-    ===================================== */
+    ================================= */
 
     .footer-credit{
 
@@ -570,6 +669,45 @@
         color:#666666;
 
         border-top:1px solid #e9e9e9;
+
+    }
+
+}
+
+
+/* =====================================
+   VERY SMALL PHONES
+===================================== */
+
+@media (max-width:400px){
+
+    .footer-container{
+
+        padding:28px 20px;
+
+        row-gap:22px;
+
+    }
+
+    .footer-column h3{
+
+        font-size:19px;
+
+    }
+
+    .footer-column p{
+
+        font-size:17px;
+
+        line-height:1.5;
+
+    }
+
+    .footer-logo img{
+
+        width:165px;
+
+        max-width:165px;
 
     }
 
