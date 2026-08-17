@@ -118,7 +118,10 @@ body{
     position:absolute;
 
     left:48px;
-    top:548px;
+
+    /* MOVED UP BECAUSE "SYMPOSIUM ON"
+       WAS REMOVED FROM THE TITLE */
+    top:485px;
 
     display:flex;
     flex-direction:column;
@@ -308,11 +311,15 @@ a:hover{
 
     /* --------------------------------------
        PROJECT LINKS
+       
+       MOVED UP BECAUSE "SYMPOSIUM ON"
+       WAS REMOVED FROM THE TITLE
     -------------------------------------- */
 
     .site-links{
         left:3%;
-        top:78%;
+
+        top:70%;
 
         gap:6px;
     }
@@ -359,10 +366,7 @@ a:hover{
         width:200px;
     }
 
-}
-
-
-/* ==========================================
+}/* ==========================================
    LAPTOPS
    993px – 1400px
 ========================================== */
@@ -407,8 +411,7 @@ a:hover{
         font-size:clamp(.78rem, .95vw, .95rem);
         line-height:1.45;
 
-        /* IMPORTANT:
-           Keep tablet/laptop text justified. */
+        /* Keep laptop text justified */
         text-align:justify;
         text-align-last:left;
     }
@@ -443,11 +446,15 @@ a:hover{
 
     /* --------------------------------------
        PROJECT LINKS
+
+       MOVED UP BECAUSE "SYMPOSIUM ON"
+       WAS REMOVED FROM THE TITLE
     -------------------------------------- */
 
     .site-links{
         left:3%;
-        top:78%;
+
+        top:70%;
 
         gap:6px;
     }
@@ -503,37 +510,10 @@ a:hover{
 
     /* --------------------------------------
        HERO
-
-       The navigation is fixed, so the hero
-       needs to begin below it.
     -------------------------------------- */
 
     .hero{
         margin-top:62px;
-
-        /*
-        Give the hero enough vertical room
-        for the introduction, title, links,
-        location, and logos.
-        */
-        min-height:820px;
-
-        background:#000000;
-    }
-
-
-    /* --------------------------------------
-       HERO BOARD
-
-       Keep the desktop/tablet board image
-       proportional.
-    -------------------------------------- */
-
-    .hero-board{
-        display:block;
-
-        width:100%;
-        height:auto;
     }
 
 
@@ -542,45 +522,40 @@ a:hover{
     -------------------------------------- */
 
     .hero-content{
+
         position:absolute;
 
-        top:0;
-        left:0;
-        right:0;
-        bottom:0;
+        inset:0;
 
-        min-height:820px;
     }
 
 
     /* --------------------------------------
        INTRODUCTION
-
-       Keep it on the LEFT and away from
-       the 3D model.
     -------------------------------------- */
 
     .intro{
-        position:absolute;
 
         left:3%;
-        top:6%;
 
-        width:47%;
-        max-width:460px;
+        top:5%;
+
+        width:52%;
+
+        max-width:none;
+
     }
 
     .intro p{
-        font-size:clamp(.78rem, 1.05vw, .95rem);
 
-        line-height:1.48;
+        font-size:clamp(.72rem, 1vw, .95rem);
 
-        /*
-        IMPORTANT:
-        Tablet text stays justified.
-        */
+        line-height:1.45;
+
         text-align:justify;
+
         text-align-last:left;
+
     }
 
 
@@ -589,59 +564,55 @@ a:hover{
     -------------------------------------- */
 
     .title-block{
-        position:absolute;
 
         left:3%;
-        top:52%;
+
+        top:45%;
+
     }
 
     .title-block h2{
-        font-size:clamp(1.8rem, 3vw, 2.5rem);
 
-        line-height:1.1;
+        font-size:clamp(1.7rem, 3vw, 2.3rem);
+
     }
 
     .title-block h1{
-        margin-top:7px;
 
-        font-size:clamp(3.2rem, 5.8vw, 5rem);
+        font-size:clamp(3rem, 5.5vw, 4.5rem);
 
-        line-height:.92;
     }
 
     .title-line{
-        width:clamp(170px, 20vw, 230px);
 
-        margin-top:18px;
+        width:clamp(160px, 20vw, 220px);
+
     }
 
 
     /* --------------------------------------
        PROJECT LINKS
 
-       Keep them below the title.
-       Do NOT use percentage positioning
-       based on the old layout.
+       MOVED UP BECAUSE "SYMPOSIUM ON"
+       WAS REMOVED FROM THE TITLE
     -------------------------------------- */
 
     .site-links{
-        position:absolute;
 
         left:3%;
-        top:72%;
 
-        display:flex;
-        flex-direction:column;
+        top:66%;
 
-        gap:6px;
+        gap:5px;
+
     }
 
     .site-links a{
-        font-size:clamp(.78rem, 1vw, .95rem);
+
+        font-size:clamp(.72rem, 1vw, .95rem);
 
         line-height:1.35;
 
-        white-space:nowrap;
     }
 
 
@@ -650,18 +621,21 @@ a:hover{
     -------------------------------------- */
 
     .homepage-location{
-        position:absolute;
 
         left:3%;
+
         bottom:5%;
 
         top:auto;
+
     }
 
     .homepage-location p{
-        font-size:clamp(.78rem, 1vw, .95rem);
 
-        line-height:1.4;
+        font-size:clamp(.72rem, 1vw, .95rem);
+
+        line-height:1.35;
+
     }
 
 
@@ -670,23 +644,25 @@ a:hover{
     -------------------------------------- */
 
     .homepage-logos{
-        position:absolute;
 
         right:3%;
+
         bottom:5%;
 
-        display:flex;
-        align-items:flex-end;
+        gap:2.5vw;
 
-        gap:clamp(18px, 2.5vw, 30px);
     }
 
     .unm-logo{
-        width:clamp(145px, 18vw, 200px);
+
+        width:clamp(150px, 18vw, 220px);
+
     }
 
     .northrop-logo{
-        width:clamp(115px, 15vw, 175px);
+
+        width:clamp(120px, 15vw, 190px);
+
     }
 
 }
@@ -700,57 +676,57 @@ a:hover{
 @media (max-width:800px) and (min-width:651px){
 
     .hero{
-        min-height:780px;
+
+        margin-top:62px;
+
     }
 
-    .hero-content{
-        min-height:780px;
-    }
-
-
-    /* --------------------------------------
-       INTRODUCTION
-    -------------------------------------- */
 
     .intro{
+
         left:4%;
 
         top:5%;
 
-        width:48%;
-        max-width:390px;
+        width:50%;
+
     }
 
     .intro p{
-        font-size:.78rem;
 
-        line-height:1.45;
+        font-size:clamp(.68rem, .9vw, .82rem);
 
-        text-align:justify;
-        text-align-last:left;
+        line-height:1.4;
+
     }
 
 
-    /* --------------------------------------
-       TITLE
-    -------------------------------------- */
-
     .title-block{
+
         left:4%;
-        top:50%;
+
+        top:44%;
+
     }
 
     .title-block h2{
-        font-size:1.8rem;
+
+        font-size:clamp(1.5rem, 2.8vw, 2rem);
+
     }
 
     .title-block h1{
-        font-size:3.6rem;
+
+        font-size:clamp(2.7rem, 5vw, 3.8rem);
+
     }
 
     .title-line{
-        width:175px;
-        margin-top:16px;
+
+        width:170px;
+
+        margin-top:15px;
+
     }
 
 
@@ -759,50 +735,59 @@ a:hover{
     -------------------------------------- */
 
     .site-links{
+
         left:4%;
-        top:70%;
+
+        top:64%;
 
         gap:5px;
+
     }
 
     .site-links a{
-        font-size:.78rem;
+
+        font-size:clamp(.68rem, .9vw, .82rem);
+
         line-height:1.3;
+
     }
 
 
-    /* --------------------------------------
-       LOCATION
-    -------------------------------------- */
-
     .homepage-location{
+
         left:4%;
-        bottom:5%;
+
+        bottom:4%;
+
     }
 
     .homepage-location p{
-        font-size:.78rem;
-        line-height:1.35;
+
+        font-size:clamp(.68rem, .9vw, .82rem);
+
     }
 
 
-    /* --------------------------------------
-       LOGOS
-    -------------------------------------- */
-
     .homepage-logos{
-        right:4%;
-        bottom:5%;
 
-        gap:18px;
+        right:4%;
+
+        bottom:4%;
+
+        gap:20px;
+
     }
 
     .unm-logo{
-        width:155px;
+
+        width:170px;
+
     }
 
     .northrop-logo{
-        width:125px;
+
+        width:140px;
+
     }
 
 }/* ==========================================
@@ -817,35 +802,17 @@ a:hover{
     -------------------------------------- */
 
     .hero{
-        margin-top:64px;
-        width:100%;
-    }
 
-
-    /* --------------------------------------
-       MOBILE HERO IMAGE
-    -------------------------------------- */
-
-    .hero-board{
-
-        display:block;
-
-        width:100%;
-        height:auto;
-
-        /*
-        Use the dedicated mobile image.
-        Desktop/tablet continue using
-        homepage-board.jpg from the HTML.
-        */
-        content:url("../assets/images/homepage-board-mobile.png");
+        margin-top:0;
 
     }
 
 
     /* --------------------------------------
        HERO CONTENT
-       Put content BELOW the image
+
+       Mobile uses normal document flow
+       so nothing overlaps the image.
     -------------------------------------- */
 
     .hero-content{
@@ -854,15 +821,7 @@ a:hover{
 
         inset:auto;
 
-        width:100%;
-        height:auto;
-
-        padding:30px 20px 45px;
-
-        display:flex;
-        flex-direction:column;
-
-        align-items:flex-start;
+        padding:35px 20px 45px;
 
     }
 
@@ -876,26 +835,25 @@ a:hover{
         position:relative;
 
         left:auto;
+
         top:auto;
-        right:auto;
-        bottom:auto;
 
         width:100%;
+
         max-width:none;
 
-        margin:0 0 35px 0;
+        margin-bottom:40px;
 
     }
 
     .intro p{
 
-        color:#ECECEC;
-
         font-size:.95rem;
 
-        line-height:1.55;
+        line-height:1.6;
 
         text-align:justify;
+
         text-align-last:left;
 
     }
@@ -910,13 +868,12 @@ a:hover{
         position:relative;
 
         left:auto;
+
         top:auto;
-        right:auto;
-        bottom:auto;
 
         width:100%;
 
-        margin:0 0 32px 0;
+        margin-bottom:28px;
 
     }
 
@@ -924,7 +881,7 @@ a:hover{
 
         font-size:1.7rem;
 
-        line-height:1.05;
+        line-height:1.1;
 
     }
 
@@ -934,7 +891,7 @@ a:hover{
 
         font-size:3rem;
 
-        line-height:.92;
+        line-height:.95;
 
     }
 
@@ -949,6 +906,9 @@ a:hover{
 
     /* --------------------------------------
        PROJECT LINKS
+
+       Because "Symposium on" was removed,
+       the links now naturally follow the line.
     -------------------------------------- */
 
     .site-links{
@@ -956,24 +916,20 @@ a:hover{
         position:relative;
 
         left:auto;
+
         top:auto;
-        right:auto;
-        bottom:auto;
 
         width:100%;
 
-        display:flex;
-        flex-direction:column;
+        margin-bottom:40px;
 
-        gap:8px;
-
-        margin:0 0 32px 0;
+        gap:9px;
 
     }
 
     .site-links a{
 
-        font-size:1rem;
+        font-size:.95rem;
 
         line-height:1.4;
 
@@ -989,13 +945,14 @@ a:hover{
         position:relative;
 
         left:auto;
+
         top:auto;
-        right:auto;
+
         bottom:auto;
 
         width:100%;
 
-        margin:0 0 32px 0;
+        margin-bottom:35px;
 
     }
 
@@ -1003,7 +960,7 @@ a:hover{
 
         font-size:.95rem;
 
-        line-height:1.45;
+        line-height:1.4;
 
     }
 
@@ -1017,32 +974,28 @@ a:hover{
         position:relative;
 
         left:auto;
+
         right:auto;
+
         top:auto;
+
         bottom:auto;
 
         width:100%;
 
         display:flex;
 
-        flex-direction:row;
+        flex-direction:column;
 
-        align-items:center;
+        align-items:flex-start;
 
-        justify-content:space-between;
-
-        gap:20px;
-
-        margin:0;
+        gap:18px;
 
     }
 
     .unm-logo{
 
-        width:45%;
-        max-width:190px;
-
-        height:auto;
+        width:180px;
 
         transform:none;
 
@@ -1050,142 +1003,80 @@ a:hover{
 
     .northrop-logo{
 
-        width:38%;
-        max-width:170px;
-
-        height:auto;
+        width:170px;
 
     }
-
-
-    /* --------------------------------------
-       DISABLE DESKTOP HOVER MOVEMENT
-    -------------------------------------- */
 
     .unm-logo:hover{
-        transform:none;
+
+        transform:scale(1.03);
+
     }
 
-    .northrop-logo:hover{
-        transform:none;
-    }
+}
 
-}/* ==========================================
+
+/* ==========================================
    VERY SMALL PHONES
    400px and below
 ========================================== */
 
 @media (max-width:400px){
 
-    /* --------------------------------------
-       HERO
-    -------------------------------------- */
-
-    .hero{
-        margin-top:64px;
-    }
-
-
-    /* --------------------------------------
-       HERO CONTENT
-    -------------------------------------- */
-
     .hero-content{
-        padding:24px 18px 40px;
-    }
 
+        padding-left:15px;
 
-    /* --------------------------------------
-       INTRODUCTION
-    -------------------------------------- */
+        padding-right:15px;
 
-    .intro{
-        margin-bottom:28px;
     }
 
     .intro p{
-        font-size:.88rem;
 
-        line-height:1.5;
+        font-size:.9rem;
 
-        text-align:justify;
-        text-align-last:left;
-    }
-
-
-    /* --------------------------------------
-       TITLE
-    -------------------------------------- */
-
-    .title-block{
-        margin-bottom:26px;
     }
 
     .title-block h2{
+
         font-size:1.55rem;
+
     }
 
     .title-block h1{
+
         font-size:2.7rem;
+
     }
 
     .title-line{
+
         width:150px;
 
-        margin-top:17px;
-    }
-
-
-    /* --------------------------------------
-       PROJECT LINKS
-    -------------------------------------- */
-
-    .site-links{
-        gap:6px;
-
-        margin-bottom:28px;
     }
 
     .site-links a{
-        font-size:.92rem;
 
-        line-height:1.4;
-    }
+        font-size:.9rem;
 
-
-    /* --------------------------------------
-       LOCATION
-    -------------------------------------- */
-
-    .homepage-location{
-        margin-bottom:28px;
     }
 
     .homepage-location p{
+
         font-size:.9rem;
 
-        line-height:1.4;
-    }
-
-
-    /* --------------------------------------
-       PARTNER LOGOS
-    -------------------------------------- */
-
-    .homepage-logos{
-        gap:16px;
     }
 
     .unm-logo{
-        width:165px;
 
-        max-width:48%;
+        width:170px;
+
     }
 
     .northrop-logo{
-        width:155px;
 
-        max-width:43%;
+        width:160px;
+
     }
 
 }
