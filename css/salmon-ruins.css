@@ -28,6 +28,7 @@ body{
     width:100%;
 
 }
+
 .video-section{
 
     width:min(1450px,92%);
@@ -39,6 +40,7 @@ body{
     margin-bottom:90px;
 
 }
+
 /* ==========================================================
    COMMON CONTENT WIDTH
 ========================================================== */
@@ -50,7 +52,9 @@ body{
 .gallery-section{
 
     width:min(1450px,92%);
+
     margin-left:auto;
+
     margin-right:auto;
 
 }
@@ -62,7 +66,9 @@ body{
 .hero-section{
 
     width:100%;
+
     margin-top:90px;
+
     margin-bottom:55px;
 
 }
@@ -70,9 +76,13 @@ body{
 .hero-image{
 
     width:65%;
+
     max-width:1350px;
+
     margin:0 auto;
+
     display:block;
+
     border-radius:8px;
 
 }
@@ -112,9 +122,13 @@ body{
 .intro-text p{
 
     font-size:18px;
+
     line-height:1.85;
+
     color:#D9D9D9;
+
     text-align:justify;
+
     margin-bottom:24px;
 
 }
@@ -128,6 +142,7 @@ body{
 .intro-text a{
 
     color:#D9D9D9;
+
     text-decoration:underline;
 
 }
@@ -143,6 +158,7 @@ body{
 .artifacts-section{
 
     margin-top:90px;
+
     margin-bottom:90px;
 
 }
@@ -217,7 +233,9 @@ body{
 
     height:10px;
 
-}/* ==========================================================
+}
+
+/* ==========================================================
    SECTION TWO
 ========================================================== */
 
@@ -305,9 +323,17 @@ body{
    VIDEO TEXT
 ========================================================== */
 
+/*
+   The small negative margin aligns the first line of the
+   right-side text with the top of the video on desktop.
+   It is reset to 0px in the responsive section below.
+*/
+
 .video-text{
 
     width:100%;
+
+    margin-top:-10px;
 
 }
 
@@ -329,7 +355,9 @@ body{
 
     color:#FFFFFF;
 
-}.video-description{
+}
+
+.video-description{
 
     width:100%;
 
@@ -499,9 +527,7 @@ body{
 
     border-radius:8px;
 
-}
-
-/* ==========================================================
+}/* ==========================================================
    RESPONSIVE
 ========================================================== */
 
@@ -518,6 +544,17 @@ body{
         grid-template-columns:1fr;
 
         gap:45px;
+
+    }
+
+    /*
+       Reset the desktop alignment adjustment
+       when video and text become stacked.
+    */
+
+    .video-text{
+
+        margin-top:0;
 
     }
 
@@ -540,6 +577,11 @@ body{
     }
 
 }
+
+
+/* ==========================================================
+   TABLETS / MOBILE
+========================================================== */
 
 @media (max-width:768px){
 
@@ -582,15 +624,51 @@ body{
 
     }
 
-}/* ==========================================
+}
+
+
+/* ==========================================================
+   SMALL PHONES
+========================================================== */
+
+@media (max-width:480px){
+
+    .page-title{
+
+        font-size:32px;
+
+    }
+
+    .intro-text p,
+    .section-two .content p,
+    .video-text p,
+    .section-three .content p{
+
+        font-size:16px;
+
+    }
+
+}
+
+
+/* ==========================================================
    FIXED NAVIGATION — HERO OFFSET
-========================================== */
+========================================================== */
+
+/*
+   NOTE:
+   This is intentionally left using .project-hero only
+   if that class exists on this page.
+
+   The Salmon Ruins hero uses .hero-section,
+   so these rules do not affect the Salmon hero.
+*/
 
 @media (max-width:650px){
 
-    .project-hero{
+    .hero-section{
 
-        padding-top:108px;
+        margin-top:100px;
 
     }
 
@@ -598,9 +676,9 @@ body{
 
 @media (min-width:651px) and (max-width:992px){
 
-    .project-hero{
+    .hero-section{
 
-        padding-top:120px;
+        margin-top:100px;
 
     }
 
