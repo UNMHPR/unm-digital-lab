@@ -168,7 +168,7 @@ body{
 
     display:grid;
 
-    grid-template-columns:minmax(0, 50%) minmax(0, 50%);
+    grid-template-columns:minmax(0, 54%) minmax(0, 46%);
 
     gap:28px;
 
