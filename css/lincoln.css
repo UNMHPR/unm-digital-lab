@@ -489,24 +489,43 @@ body{
 
 }.virtual-tour {
     width: 100%;
-    margin: 45px 0 55px;
+    margin: 60px 0;
+    overflow: visible;
 }
 
 .virtual-tour iframe {
     width: 100%;
-    height: 600px;
+    height: 800px;
     display: block;
     border: none;
+    border-radius: 8px;
+    overflow: hidden;
 }
+
+/* TABLET */
 
 @media (max-width: 768px) {
-    .virtual-tour iframe {
-        height: 450px;
+
+    .virtual-tour {
+        margin: 45px 0;
     }
+
+    .virtual-tour iframe {
+        height: 800px;
+    }
+
 }
 
+/* MOBILE */
+
 @media (max-width: 480px) {
-    .virtual-tour iframe {
-        height: 350px;
+
+    .virtual-tour {
+        margin: 40px 0;
     }
+
+    .virtual-tour iframe {
+        height: 800px;
+    }
+
 }
